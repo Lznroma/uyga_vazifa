@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Ma'lumotlarini Yuborish</title>
+</head>
+<body>
+    <h1>Kontakt malumotlarini yuborish</h1>
+    
+    <!-- Bitta forma ichiga barcha elementlarni joylashtirish -->
+    <form action="" method="post">
+        <!-- Telefon raqami -->
+        <label for="phone">Telefon raqamingiz:</label>
+        <br>
+        <input type="tel" id="phone" name="phone" placeholder="Telefon raqamingizni kiriting" required>
+        <br><br>
+
+        <!-- Manzil -->
+        <label for="address">Manzilingiz:</label>
+        <br>
+        <textarea id="address" name="address" cols="100" rows="10" placeholder="To'liq manzilingizni kiriting" required></textarea>
+        <br><br>
+
+        <!-- Xabar -->
+        <label for="message">Xabaringiz:</label>
+        <br>
+        <textarea id="message" name="message" cols="100" rows="10" placeholder="Bu yerga xabaringizni kiriting..." required></textarea>
+        <br><br>
+
+        <!-- Aloqa usuli -->
+        <label for="contact-method">Siz bilan qanday aloqa qilishimizni hohlaysiz?</label>
+        <br>
+        <input type="text" id="contact-method" name="contact-method" list="d1" placeholder="Aloqa usulini tanlang" required>
+        <datalist id="d1">
+            <option value="Email orqali">
+            <option value="Telefon raqam orqali">
+            <option value="Instagram orqali">
+            <option value="Telegram orqali">
+            <option value="Facebook orqali">
+        </datalist>
+        <br><br>
+        <input type="submit" value="Xabarni yuborish">
+        <input type="reset" value="Tozalash">
+    </form>
+    <a href="index.html"> Asosiy sahifaga o'tish</a>
+</body>
+</html>
